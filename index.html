@@ -4,65 +4,75 @@
 	<meta charset="utf-8">
 	<title>GetCode:)</title>
 	<style type="text/css">
-	body{
-		margin: 10px;
-		font-family: arial sans-serif;
-		font-size: 20px;
-	}
-	.course{
-		height: 130px;
-		widows: 130px;
-	}
-	#one{
-		border: black dashed;
-		border-radius: 20px;
-		width: 250px;
-		padding: 12px;
-		float: left;
-		margin: 10px;
-	}	
-	#one p{
-		text-align: justify;
-	}
-	#two{
-		border: black dashed;
-		width: 250px;
-		padding: 12px;
-		float: left;
-		margin: 10px;
-		border-radius: 20px;
-	}	
-	#two p{
-		text-align: justify;
-	}
-	#three{
-		border: black dashed;
-		width: 350px;
-		padding: 12px;
-		float: left;
-		margin: 10px;
-		border-radius: 20px;
-	}	
-	#three p{
-		text-align: justify;
-	}
+		#heading{
+			font-family: arial;
+			font-weight: bolder;
+			text-align: center;
+			font-size: 40px;
+		}
+		#tag_line{
+			text-align: center;
+
+		}
+		#logo{
+			float: left;
+		}
+		#container{
+			background: #adadeb;
+			height: 120px;
+		}
+		#img{
+			float: right;
+			position: relative;
+			bottom: 50px;
+		}
+		.sec{
+			line-height: 20px;
+			padding-top: 2px;
+		}
+		nav{
+			margin-top: 25px;
+			height: 40px;
+			background: #ffff99;
+		}
+		nav ul{
+			padding-top: 13px;
+			padding-left: 10px;
+			margin-top: 10px;
+		}
+		nav li{
+			list-style: none;
+			float: left;
+			padding-right: 20px;
+			font-family: sans-serif;
+			font-weight: bold;
+			font-size: 20px;
+		}
+		a{
+			text-decoration: none;
+		}
+		a:hover{
+			color: white;
+			background: green;
+
+		}
 	</style>
 </head>
 <body>
-	<div id="one">
-		<img class="course"src="clang.png">
-		<h2>C - Language</h2>
-		<p>It is a programming langauge used to create softwares. It is a low level language which was invented in 1972 by Denni Redcitche</p>
-	</div>
-	<div id="two">
-	<img class="course" src="c++.png">
-	<h2>C ++</h2>
-		<p>It is a programming langauge used to create softwares. It is a low level language which was invented in 1976 by Njarney Stroustrop</p>
-	</div>
-	<div id="three">
-	<img class="course" src="java.png">                                     
-	<h2>JAVA</h2>
-		<p>It is a programming langauge used to create softwares. It is a High level language and also called as object oriented programming langauge which was invented by Sun Microsystems in 1990's </p>
+	<div id="container">
+		<img id="logo" src="logo1.jpg" height="120px" width="120px" alt="Logo">
+		<div class="sec">
+			<h1 id="heading">WEB TECHNICIAN</h1>
+			<h3 id="tag_line">BEST WEBSITES FOR DEVELOPING COMPANIES</h3>
+		</div>
+		<img id="img" src="img.png" height="50px" width="50px">
+		<nav>
+			<ul id="menu">
+				<li><a href="#">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
 	</div>
 </body>
 </html>
