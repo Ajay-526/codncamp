@@ -57,8 +57,8 @@
 
 		}
 		#one{
-			height: 450px;
-			width: 450px;
+			height: 350px;
+			width: 350px;
 			position: relative;
 			top: 30px;
 			float: right;
@@ -66,10 +66,67 @@
 		#content{
 			float: left;
 			background: #fed4cf;
+			padding-left: 10px;
 		}
 		#content p{
 			font-family: verdana ,sans-serif;
-			font-size: 15px;
+			font-size: 20px;
+			line-height: 1.5em;
+			padding-left: 10px;
+		}
+		#content2{
+			float: left;
+			background: #fed4cf;
+			padding-left: 10px;
+		}
+		#content2 p{
+			font-family: verdana ,sans-serif;
+			font-size: 20px;
+			line-height: 1.5em;
+			padding-left: 10px;
+		}
+		#two{
+			height: 350px;
+			width: 550px;
+			position: relative;
+			left: 20px;
+			float: right;
+		}
+		#content2{
+			background: #fed2a5;
+		}
+		#content h1:hover{
+			color: red;
+			background: white;
+			padding: 10px;
+			width: fit-content	;
+		}
+		#content2 h1:hover{
+			color: red;
+			background: white;
+			padding: 10px;
+			width: fit-content	;
+		}
+		@keyframes shake {
+			 0% { transform: translate(1px, 1px) rotate(0deg); }
+			  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+			  20% { transform: translate(-3px, 0px) rotate(1deg); }
+			  30% { transform: translate(3px, 2px) rotate(0deg); }
+			  40% { transform: translate(1px, -1px) rotate(1deg); }
+			  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+			  60% { transform: translate(-3px, 1px) rotate(0deg); }
+			  70% { transform: translate(3px, 1px) rotate(-1deg); }
+			  80% { transform: translate(-1px, -1px) rotate(1deg); }
+			  90% { transform: translate(1px, 2px) rotate(0deg); }
+			  100% { transform: translate(1px, -2px) rotate(-1deg); }
+		}
+		#two:hover{
+			 animation: shake 0.5s;
+			 animation-iteration-count: infinite;
+		}
+		#one:hover{
+			 animation: shake 0.5s;
+			 animation-iteration-count: infinite;
 		}
 	</style>
 </head>
@@ -93,6 +150,12 @@
 		<img id="one" src="one.png">
 		<h1>Getting to Know You</h1>
 		<p>Every digital project we take on starts with the discovery step of our approach. This can be as simple as getting to know you, your business and your customers over a cup of tea, to something as complex as delivering a full performance review, competitor analysis and market research report. Either way, taking the time to discover these things about your business and your customers helps us understand what success looks like for you, so we can create something that achieves your digital goals.</p>
+	</div>
+		<br><br><br>
+	<div id="content2">
+		<img id="two" src="two.png">
+		<h1>Bringing Life to your Brand</h1>
+		<p>Our design process starts by taking everything we’ve learned about your business so far and interpreting this in a creative way to produce initial design concepts, wireframes, responsive layouts and final design mock-ups. Getting the visual elements of your digital project right relies heavily on collaboration so we take the time to have regular conversations and plenty of discussions with you to help shape the final creative vision. Looking good is only half the story though, it has to work well too. We'll map the user flow through your content, consider the specific functionality needed to achieve your goals and make sure your website is easy to use no matter what device it’s being used on.</p>
 	</div>
 </body>
 </html>
